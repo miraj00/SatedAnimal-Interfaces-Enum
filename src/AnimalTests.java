@@ -37,9 +37,10 @@ public class AnimalTests {
 	bush.eat(FoodType.PLANTS, 100);
 	bush.eat(FoodType.MEAT, 200);
 	bush.eat(FoodType.LIGHT, 40);
-	boolean expected = false;
-	boolean actual = bush.isSated();
-	assertEquals(expected, actual);
+//	boolean expected = false;
+//	boolean actual = bush.isSated();
+//	assertEquals(expected, actual);
+	assertEquals(false, bush.isSated());
 	}
 	
 	@Test
@@ -149,6 +150,7 @@ public class AnimalTests {
 	wolf.eat(FoodType.MEAT, 200);
 	wolf.eat(FoodType.MEAT, 300);
 	wolf.eat(FoodType.MEAT, 100);
+	wolf.eat(FoodType.MEAT, 50);
 	boolean expected = false;
 	boolean actual = wolf.isSated();
 	assertEquals(expected, actual);

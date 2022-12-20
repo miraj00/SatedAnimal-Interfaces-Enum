@@ -29,7 +29,7 @@ public class Pig implements IAnimal {
 
 	@Override
 	public boolean isSated() {
-		int consumedCalories = plantCalories + meatCalories;
+		  int consumedCalories = plantCalories + meatCalories;
 		
 		if (consumedCalories >= requiredCalories() && plantCalories >= 1000 && meatCalories >= 1000) {
 			System.out.println(" Pig is sated ");
